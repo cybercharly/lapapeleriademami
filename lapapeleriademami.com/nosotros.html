@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visión y Misión | La Papelería de Mami – El Salto, Jalisco</title>
+  <meta name="description" content="Conoce la misión, visión y valores de La Papelería de Mami. Tu proveedor de papelería y artículos de oficina en El Salto, Jalisco.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'brand-yellow':      '#FFC107',
+          'brand-yellow-dark': '#E6A800',
+          'brand-teal':        '#0891B2',
+          'brand-teal-light':  '#22D3EE',
+          'brand-orange':      '#F97316',
+          'brand-dark':        '#1E293B',
+          'brand-gray':        '#64748B',
+        },
+        fontFamily: { sans: ['Poppins','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white font-sans text-brand-dark">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-dark text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-y-1">
+      <div class="flex items-center gap-4 flex-wrap">
+        <a href="tel:3334817411" class="flex items-center gap-1 hover:text-brand-yellow transition">
+          <i class="fas fa-phone text-brand-yellow"></i> 333 481 7411
+        </a>
+        <span class="hidden md:flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-brand-yellow"></i> Tabaquillo 3154C, La Azucena, El Salto, Jal.
+        </span>
+      </div>
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="flex items-center gap-1 text-brand-teal-light"><i class="fas fa-truck"></i> Entrega a domicilio</span>
+        <span class="flex items-center gap-1 text-brand-yellow"><i class="fas fa-check-circle"></i> Crédito disponible</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/logo2.png" alt="La Papelería de Mami" class="h-12 w-12 object-contain rounded-full">
+        <div class="hidden sm:block leading-tight">
+          <div class="font-bold text-brand-dark text-base">La Papelería de Mami</div>
+          <div class="text-xs text-brand-gray">Tu proveedor de confianza</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html"     class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors text-sm">
+          <i class="fab fa-whatsapp"></i> Cotizar ahora
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark p-2 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="index.html"     class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar" target="_blank"
+           class="mt-2 bg-green-500 text-white font-semibold py-3 rounded-full text-center flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="hero-gradient text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Nuestra Historia</h1>
+      <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+        Un negocio familiar que nació del amor al servicio y creció para ser tu aliado en papelería y soluciones integrales.
+      </p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-block bg-brand-yellow text-brand-dark font-semibold text-xs px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Quiénes somos</span>
+          <h2 class="text-3xl font-bold mb-5">Un negocio con corazón familiar</h2>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            La Papelería de Mami nació con una idea sencilla pero poderosa: ser el lugar donde todos encuentran lo que necesitan,
+            con la calidez de atención que solo un negocio familiar puede ofrecer.
+          </p>
+          <p class="text-brand-gray leading-relaxed mb-4">
+            Lo que comenzó como una pequeña papelería en La Azucena, El Salto, se convirtió en un centro de soluciones integrales
+            donde empresas, escuelas y familias pueden resolver desde la compra de una hoja de papel hasta la gestión de trámites gubernamentales.
+          </p>
+          <p class="text-brand-gray leading-relaxed">
+            Hoy ampliamos nuestro alcance con servicio de entrega a domicilio, atención a empresas de todos tamaños,
+            crédito disponible y precios competitivos de mayoreo y menudeo — porque tu tranquilidad es nuestra prioridad.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img src="img/logo2.png" alt="La Papelería de Mami" class="w-64 h-64 object-contain drop-shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISION Y VISION -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Misión -->
+        <div class="bg-white rounded-2xl p-8 shadow border-t-4 border-brand-teal">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center">
+              <i class="fas fa-bullseye text-white text-xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold">Misión</h2>
+          </div>
+          <p class="text-brand-gray leading-relaxed">
+            Ser el proveedor integral de papelería y servicios más confiable para empresas, instituciones y familias de El Salto
+            y la zona metropolitana de Guadalajara. Ofrecemos soluciones completas con entrega a domicilio, precios competitivos
+            de mayoreo y menudeo, crédito accesible y la calidez de atención de un negocio familiar comprometido con tu satisfacción.
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div class="bg-white rounded-2xl p-8 shadow border-t-4 border-brand-yellow">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 bg-brand-yellow rounded-xl flex items-center justify-center">
+              <i class="fas fa-eye text-brand-dark text-xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold">Visión</h2>
+          </div>
+          <p class="text-brand-gray leading-relaxed">
+            Convertirnos en el referente número uno de papelería y abastecimiento de oficina en El Salto y municipios vecinos,
+            reconocidos por nuestra confiabilidad, variedad de productos, servicio a domicilio eficiente y las mejores condiciones
+            comerciales del mercado — desde el cliente particular hasta la gran empresa.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold section-title">Nuestros Valores</h2>
+        <p class="text-brand-gray mt-6">Los principios que guían cada pedido, cada entrega, cada trato.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-handshake text-brand-teal text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Confianza</h3>
+          <p class="text-brand-gray text-sm">Cumplimos lo que prometemos. Tu pedido llega completo, a tiempo y en las condiciones acordadas.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-heart text-yellow-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Calidez</h3>
+          <p class="text-brand-gray text-sm">Tratamos a cada cliente como si fuera parte de la familia. La atención humana hace la diferencia.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-bolt text-green-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Agilidad</h3>
+          <p class="text-brand-gray text-sm">Respondemos rápido y entregamos puntual. Tu tiempo es tan valioso como el nuestro.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-award text-purple-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Calidad</h3>
+          <p class="text-brand-gray text-sm">Trabajamos con marcas reconocidas y verificamos cada pedido antes de entregarlo.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-users text-brand-orange text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Servicio al cliente</h3>
+          <p class="text-brand-gray text-sm">Escuchamos tus necesidades y buscamos la mejor solución, sin importar el tamaño de tu pedido.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-gray-50 hover:shadow transition">
+          <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-seedling text-teal-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold mb-2">Crecimiento</h3>
+          <p class="text-brand-gray text-sm">Creemos en crecer juntos. Tu éxito es nuestro éxito, y por eso nos comprometemos a largo plazo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-16 bg-brand-teal text-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold">¿Por Qué Elegirnos?</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex items-start gap-4 bg-white bg-opacity-10 rounded-xl p-5">
+          <i class="fas fa-store text-brand-yellow text-2xl shrink-0 mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Tienda física establecida</h3>
+            <p class="text-blue-100 text-sm">Somos un negocio local con años de presencia en La Azucena, El Salto. No somos intermediarios, somos tu proveedor directo.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white bg-opacity-10 rounded-xl p-5">
+          <i class="fas fa-truck text-brand-yellow text-2xl shrink-0 mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Entrega a domicilio</h3>
+            <p class="text-blue-100 text-sm">Llevamos tus pedidos directo a tu empresa u oficina. Sin que tengas que perder tiempo ni desplazarte.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white bg-opacity-10 rounded-xl p-5">
+          <i class="fas fa-tags text-brand-yellow text-2xl shrink-0 mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Precios competitivos</h3>
+            <p class="text-blue-100 text-sm">Mayoreo o menudeo, siempre buscamos darte el mejor precio del mercado. Pide tu cotización sin compromiso.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white bg-opacity-10 rounded-xl p-5">
+          <i class="fas fa-credit-card text-brand-yellow text-2xl shrink-0 mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Crédito empresarial</h3>
+            <p class="text-blue-100 text-sm">Facilitamos el flujo de tu empresa con líneas de crédito a 15 o 30 días para clientes registrados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-14 bg-brand-dark text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">¿Quieres ser nuestro cliente?</h2>
+      <p class="text-gray-300 mb-8">Contáctanos y comencemos a trabajar juntos hoy mismo.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20ser%20cliente%20de%20La%20Papelar%C3%ADa%20de%20Mami" target="_blank" class="btn-yellow">
+          <i class="fab fa-whatsapp text-green-600 text-lg"></i> Contáctanos por WhatsApp
+        </a>
+        <a href="contacto.html" class="border-2 border-white text-white font-semibold px-7 py-3 rounded-full flex items-center gap-2 hover:bg-white hover:text-brand-dark transition">
+          <i class="fas fa-envelope"></i> Ver más formas de contacto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="img/logo2.png" alt="Logo" class="h-12 w-12 object-contain rounded-full">
+            <div>
+              <div class="text-white font-bold">La Papelería de Mami</div>
+              <div class="text-xs text-gray-400">Tu proveedor de confianza</div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">Centro de soluciones de papelería y servicios para empresas y particulares en El Salto, Jalisco.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html"     class="hover:text-brand-yellow transition">Inicio</a></li>
+            <li><a href="servicios.html" class="hover:text-brand-yellow transition">Servicios</a></li>
+            <li><a href="nosotros.html"  class="hover:text-brand-yellow transition">Visión y Misión</a></li>
+            <li><a href="contacto.html"  class="hover:text-brand-yellow transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-map-marker-alt text-brand-yellow mt-1 shrink-0"></i>
+              <span>Tabaquillo 3154C, Col. La Azucena, El Salto, Jal. C.P. 45680</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp text-green-400"></i>
+              <a href="https://wa.me/523334817411" target="_blank" class="hover:text-brand-yellow transition">333 481 7411</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope text-brand-yellow"></i>
+              <a href="mailto:contacto@lapapeleriademami.com" class="hover:text-brand-yellow transition break-all">contacto@lapapeleriademami.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+        © 2025 La Papelería de Mami. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline">¿En qué te ayudamos?</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

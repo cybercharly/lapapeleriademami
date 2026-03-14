@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Papelería de Mami | Papelería y Artículos de Oficina a Domicilio – El Salto, Jalisco</title>
+  <meta name="description" content="Entrega de papelería, útiles y artículos de oficina a domicilio para empresas y particulares en El Salto, Jalisco. Mayoreo, menudeo y crédito disponible.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'brand-yellow':      '#FFC107',
+          'brand-yellow-dark': '#E6A800',
+          'brand-teal':        '#0891B2',
+          'brand-teal-light':  '#22D3EE',
+          'brand-orange':      '#F97316',
+          'brand-dark':        '#1E293B',
+          'brand-gray':        '#64748B',
+        },
+        fontFamily: { sans: ['Poppins','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white font-sans text-brand-dark">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-dark text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-y-1">
+      <div class="flex items-center gap-4 flex-wrap">
+        <a href="tel:3334817411" class="flex items-center gap-1 hover:text-brand-yellow transition">
+          <i class="fas fa-phone text-brand-yellow"></i> 333 481 7411
+        </a>
+        <span class="hidden md:flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-brand-yellow"></i> Tabaquillo 3154C, La Azucena, El Salto, Jal.
+        </span>
+      </div>
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="flex items-center gap-1 text-brand-teal-light"><i class="fas fa-truck"></i> Entrega a domicilio</span>
+        <span class="flex items-center gap-1 text-brand-yellow"><i class="fas fa-check-circle"></i> Crédito disponible</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/logo2.png" alt="La Papelería de Mami" class="h-12 w-12 object-contain rounded-full">
+        <div class="hidden sm:block leading-tight">
+          <div class="font-bold text-brand-dark text-base">La Papelería de Mami</div>
+          <div class="text-xs text-brand-gray">Tu proveedor de confianza</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html"     class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors text-sm">
+          <i class="fab fa-whatsapp"></i> Cotizar ahora
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark p-2 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="index.html"     class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar" target="_blank"
+           class="mt-2 bg-green-500 text-white font-semibold py-3 rounded-full text-center flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-gradient text-white py-20 md:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none select-none opacity-5 text-9xl flex flex-wrap gap-16 p-8">
+      <span>✏️</span><span>📋</span><span>📦</span><span>🖊️</span><span>📁</span><span>🖨️</span>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 relative">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="animate-fadeInUp">
+          <span class="inline-flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-4 py-2 text-sm font-medium mb-6">
+            <i class="fas fa-building text-brand-yellow"></i> Servicio para empresas y particulares
+          </span>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
+            Tu Papelería de Confianza,
+            <span class="text-brand-yellow"> Ahora en Tu Empresa</span>
+          </h1>
+          <p class="text-blue-100 text-lg mb-8 leading-relaxed">
+            Entregamos papelería, artículos de oficina y más directamente a tu negocio.
+            Precios de mayoreo, <strong class="text-white">crédito disponible</strong> y atención personalizada.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-8">
+            <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido%20para%20mi%20empresa" target="_blank" class="btn-yellow">
+              <i class="fab fa-whatsapp text-green-700"></i> Cotizar por WhatsApp
+            </a>
+            <a href="servicios.html" class="bg-white bg-opacity-15 hover:bg-opacity-25 border border-white border-opacity-40 text-white font-semibold px-7 py-3 rounded-full flex items-center gap-2 transition-all">
+              <i class="fas fa-list"></i> Ver servicios
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-5 text-sm text-blue-100">
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-green-400"></i> Entrega en zona</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-green-400"></i> Crédito a 30 días</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-green-400"></i> Mayoreo y menudeo</span>
+          </div>
+        </div>
+        <div class="flex justify-center animate-fadeInUp delay-200">
+          <img src="img/logo2.png" alt="La Papelería de Mami" class="w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="bg-brand-yellow py-10">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="flex flex-col items-center gap-2">
+          <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center shadow">
+            <i class="fas fa-truck text-brand-teal text-2xl"></i>
+          </div>
+          <div class="font-bold text-brand-dark text-sm">Entrega a Domicilio</div>
+          <div class="text-xs text-yellow-900 opacity-75">Zona metropolitana</div>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center shadow">
+            <i class="fas fa-credit-card text-brand-teal text-2xl"></i>
+          </div>
+          <div class="font-bold text-brand-dark text-sm">Crédito Disponible</div>
+          <div class="text-xs text-yellow-900 opacity-75">Para empresas</div>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center shadow">
+            <i class="fas fa-boxes text-brand-teal text-2xl"></i>
+          </div>
+          <div class="font-bold text-brand-dark text-sm">Mayoreo y Menudeo</div>
+          <div class="text-xs text-yellow-900 opacity-75">Sin mínimo de compra</div>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <div class="bg-white rounded-full w-14 h-14 flex items-center justify-center shadow">
+            <i class="fas fa-handshake text-brand-teal text-2xl"></i>
+          </div>
+          <div class="font-bold text-brand-dark text-sm">Atención Empresarial</div>
+          <div class="text-xs text-yellow-900 opacity-75">Cotizaciones personalizadas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold section-title">Nuestros Servicios</h2>
+        <p class="text-brand-gray mt-6 max-w-xl mx-auto">Todo lo que tu empresa necesita, en un solo lugar con entrega a tu puerta.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="service-card bg-white rounded-2xl p-6 shadow text-center">
+          <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-pencil-alt text-yellow-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-brand-dark mb-2">Papelería y Útiles</h3>
+          <p class="text-brand-gray text-sm">Escolares, oficina, arte y manualidades. Marcas reconocidas y económicas.</p>
+          <a href="servicios.html#papeleria" class="mt-4 inline-block text-brand-teal font-semibold text-sm hover:underline">Ver más →</a>
+        </div>
+        <div class="service-card bg-white rounded-2xl p-6 shadow text-center">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-briefcase text-brand-teal text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-brand-dark mb-2">Artículos de Oficina</h3>
+          <p class="text-brand-gray text-sm">Folders, archiveros, tintas, tóner y todo para equipar tu espacio.</p>
+          <a href="servicios.html#oficina" class="mt-4 inline-block text-brand-teal font-semibold text-sm hover:underline">Ver más →</a>
+        </div>
+        <div class="service-card bg-white rounded-2xl p-6 shadow text-center">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-print text-green-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-brand-dark mb-2">Impresión y Copias</h3>
+          <p class="text-brand-gray text-sm">Copias B&N y color, enmicados, engargolados y encuadernación.</p>
+          <a href="servicios.html#impresion" class="mt-4 inline-block text-brand-teal font-semibold text-sm hover:underline">Ver más →</a>
+        </div>
+        <div class="service-card bg-white rounded-2xl p-6 shadow text-center">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-file-alt text-purple-600 text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-brand-dark mb-2">Trámites Digitales</h3>
+          <p class="text-brand-gray text-sm">RFC, IMSS, Infonavit, CFE, CURP, actas y trámites gubernamentales.</p>
+          <a href="servicios.html#tramites" class="mt-4 inline-block text-brand-teal font-semibold text-sm hover:underline">Ver más →</a>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="servicios.html" class="btn-teal"><i class="fas fa-th-large"></i> Ver todos los servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold section-title">¿A Quién Servimos?</h2>
+        <p class="text-brand-gray mt-6 max-w-xl mx-auto">Precios y condiciones adaptadas a cada tipo de cliente.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Empresas -->
+        <div class="rounded-2xl overflow-hidden border border-gray-100 shadow">
+          <div class="bg-brand-teal p-6 text-white text-center">
+            <i class="fas fa-building text-4xl mb-3 block"></i>
+            <h3 class="text-xl font-bold">Empresas</h3>
+            <p class="text-cyan-100 text-sm mt-1">Pequeñas, medianas y grandes</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 text-brand-gray text-sm">
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Crédito disponible (previa evaluación)</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Precios de mayoreo desde el primer pedido</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Entrega directa en tus instalaciones</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Cotizaciones formales con factura</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Pedidos recurrentes programados</li>
+            </ul>
+            <a href="https://wa.me/523334817411?text=Hola%2C%20soy%20empresa%20y%20quiero%20cotizar" target="_blank"
+               class="mt-5 block text-center bg-brand-teal text-white font-semibold py-3 rounded-xl hover:opacity-90 transition text-sm">
+              Cotizar para mi empresa
+            </a>
+          </div>
+        </div>
+
+        <!-- Escuelas -->
+        <div class="rounded-2xl overflow-hidden border border-gray-100 shadow">
+          <div class="bg-brand-orange p-6 text-white text-center">
+            <i class="fas fa-graduation-cap text-4xl mb-3 block"></i>
+            <h3 class="text-xl font-bold">Escuelas y Academias</h3>
+            <p class="text-orange-100 text-sm mt-1">Instituciones educativas</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 text-brand-gray text-sm">
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Paquetes de útiles escolares a granel</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Material didáctico en cantidad</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Cuadernos y libretas por caja</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Impresiones y fotocopias masivas</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Atención preferencial en temporada</li>
+            </ul>
+            <a href="https://wa.me/523334817411?text=Hola%2C%20soy%20escuela%20y%20quiero%20cotizar" target="_blank"
+               class="mt-5 block text-center bg-brand-orange text-white font-semibold py-3 rounded-xl hover:opacity-90 transition text-sm">
+              Cotizar para mi escuela
+            </a>
+          </div>
+        </div>
+
+        <!-- Particulares -->
+        <div class="rounded-2xl overflow-hidden border border-gray-100 shadow">
+          <div class="bg-brand-yellow p-6 text-brand-dark text-center">
+            <i class="fas fa-user text-4xl mb-3 block"></i>
+            <h3 class="text-xl font-bold">Particulares</h3>
+            <p class="text-yellow-800 text-sm mt-1">Compras individuales y familiares</p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 text-brand-gray text-sm">
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Sin mínimo de compra</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Entrega a domicilio disponible</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Atención personalizada y cercana</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> También visita nuestra tienda física</li>
+              <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-0.5"></i> Asistencia con trámites digitales</li>
+            </ul>
+            <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank"
+               class="mt-5 block text-center bg-brand-yellow text-brand-dark font-semibold py-3 rounded-xl hover:opacity-90 transition text-sm">
+              Hacer un pedido
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIT BANNER -->
+  <section class="py-16 bg-gradient-to-r from-green-600 to-green-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="inline-flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-4 py-2 text-sm font-medium mb-5">
+        <i class="fas fa-credit-card"></i> Crédito empresarial disponible
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Tu Empresa Necesita Crédito?</h2>
+      <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
+        Ofrecemos líneas de crédito para empresas. Pide tu pedido hoy y paga a 15 o 30 días.
+        Contáctanos para conocer los requisitos.
+      </p>
+      <a href="https://wa.me/523334817411?text=Hola%2C%20me%20interesa%20el%20cr%C3%A9dito%20empresarial%2C%20%C2%BFqu%C3%A9%20necesito%3F" target="_blank"
+         class="inline-flex items-center gap-3 bg-white text-green-700 font-bold px-8 py-4 rounded-full text-lg hover:bg-green-50 transition shadow-lg">
+        <i class="fab fa-whatsapp text-green-500 text-2xl"></i> Preguntar sobre crédito
+      </a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold section-title">¿Cómo Hacer Tu Pedido?</h2>
+        <p class="text-brand-gray mt-6">Rápido, fácil y sin complicaciones</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-extrabold mx-auto mb-4">1</div>
+          <h3 class="font-bold mb-2">Contáctanos</h3>
+          <p class="text-brand-gray text-sm">Envíanos un WhatsApp o llámanos con lo que necesitas.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-extrabold mx-auto mb-4">2</div>
+          <h3 class="font-bold mb-2">Recibe tu cotización</h3>
+          <p class="text-brand-gray text-sm">Te enviamos precios de mayoreo o menudeo en minutos.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-extrabold mx-auto mb-4">3</div>
+          <h3 class="font-bold mb-2">Recibe en tu puerta</h3>
+          <p class="text-brand-gray text-sm">Coordinamos la entrega directamente a tu empresa o domicilio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 bg-brand-dark text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para Cotizar?</h2>
+      <p class="text-gray-300 mb-8 text-lg">Escríbenos ahora y recibe tu cotización personalizada sin compromiso.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank" class="btn-yellow text-base">
+          <i class="fab fa-whatsapp text-green-600 text-lg"></i> Cotizar por WhatsApp
+        </a>
+        <a href="tel:3334817411" class="border-2 border-white text-white font-semibold px-7 py-3 rounded-full flex items-center gap-2 hover:bg-white hover:text-brand-dark transition text-base">
+          <i class="fas fa-phone"></i> Llamar ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="img/logo2.png" alt="Logo" class="h-12 w-12 object-contain rounded-full">
+            <div>
+              <div class="text-white font-bold">La Papelería de Mami</div>
+              <div class="text-xs text-gray-400">Tu proveedor de confianza</div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">Centro de soluciones de papelería y servicios para empresas y particulares en El Salto, Jalisco.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html"     class="hover:text-brand-yellow transition">Inicio</a></li>
+            <li><a href="servicios.html" class="hover:text-brand-yellow transition">Servicios</a></li>
+            <li><a href="nosotros.html"  class="hover:text-brand-yellow transition">Visión y Misión</a></li>
+            <li><a href="contacto.html"  class="hover:text-brand-yellow transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-map-marker-alt text-brand-yellow mt-1 shrink-0"></i>
+              <span>Tabaquillo 3154C, Col. La Azucena, El Salto, Jal. C.P. 45680</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp text-green-400"></i>
+              <a href="https://wa.me/523334817411" target="_blank" class="hover:text-brand-yellow transition">333 481 7411</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-phone text-brand-yellow"></i>
+              <a href="tel:3334817411" class="hover:text-brand-yellow transition">333 481 7411</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope text-brand-yellow"></i>
+              <a href="mailto:contacto@lapapeleriademami.com" class="hover:text-brand-yellow transition break-all">contacto@lapapeleriademami.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+        © 2025 La Papelería de Mami. Todos los derechos reservados. El Salto, Jalisco, México.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline">¿En qué te ayudamos?</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

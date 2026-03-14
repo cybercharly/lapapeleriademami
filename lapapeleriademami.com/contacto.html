@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Cotización | La Papelería de Mami – El Salto, Jalisco</title>
+  <meta name="description" content="Contáctanos para cotizar tu pedido de papelería. Entrega a domicilio para empresas y particulares. WhatsApp: 333 481 7411.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          'brand-yellow':      '#FFC107',
+          'brand-yellow-dark': '#E6A800',
+          'brand-teal':        '#0891B2',
+          'brand-teal-light':  '#22D3EE',
+          'brand-orange':      '#F97316',
+          'brand-dark':        '#1E293B',
+          'brand-gray':        '#64748B',
+        },
+        fontFamily: { sans: ['Poppins','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white font-sans text-brand-dark">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-dark text-white text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-y-1">
+      <div class="flex items-center gap-4 flex-wrap">
+        <a href="tel:3334817411" class="flex items-center gap-1 hover:text-brand-yellow transition">
+          <i class="fas fa-phone text-brand-yellow"></i> 333 481 7411
+        </a>
+        <span class="hidden md:flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-brand-yellow"></i> Tabaquillo 3154C, La Azucena, El Salto, Jal.
+        </span>
+      </div>
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="flex items-center gap-1 text-brand-teal-light"><i class="fas fa-truck"></i> Entrega a domicilio</span>
+        <span class="flex items-center gap-1 text-brand-yellow"><i class="fas fa-check-circle"></i> Crédito disponible</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/logo2.png" alt="La Papelería de Mami" class="h-12 w-12 object-contain rounded-full">
+        <div class="hidden sm:block leading-tight">
+          <div class="font-bold text-brand-dark text-base">La Papelería de Mami</div>
+          <div class="text-xs text-brand-gray">Tu proveedor de confianza</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html"     class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark hover:text-brand-teal font-medium transition-colors">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-full flex items-center gap-2 transition-colors text-sm">
+          <i class="fab fa-whatsapp"></i> Cotizar ahora
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark p-2 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="index.html"     class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Inicio</a>
+        <a href="servicios.html" class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Servicios</a>
+        <a href="nosotros.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Nosotros</a>
+        <a href="contacto.html"  class="nav-link text-brand-dark font-medium py-3 border-b border-gray-100 hover:text-brand-teal">Contacto</a>
+        <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar" target="_blank"
+           class="mt-2 bg-green-500 text-white font-semibold py-3 rounded-full text-center flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="hero-gradient text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Contáctanos</h1>
+      <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+        Estamos listos para atenderte. Solicita tu cotización, pregunta por crédito o simplemente salúdanos.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- LEFT: Form -->
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Solicita tu cotización</h2>
+          <p class="text-brand-gray text-sm mb-6">Llena el formulario y al enviar se abrirá WhatsApp con tu mensaje listo. ¡Así de fácil!</p>
+
+          <form id="cotiza-form" class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="f-nombre">Nombre completo <span class="text-red-500">*</span></label>
+              <input id="f-nombre" type="text" required placeholder="Juan Pérez"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent transition">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="f-empresa">Empresa / Organización</label>
+              <input id="f-empresa" type="text" placeholder="Nombre de tu empresa (opcional)"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent transition">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="f-tipo">Tipo de cliente <span class="text-red-500">*</span></label>
+              <select id="f-tipo" required
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent transition bg-white">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Empresa pequeña">Empresa pequeña</option>
+                <option value="Empresa mediana">Empresa mediana</option>
+                <option value="Empresa grande">Empresa grande</option>
+                <option value="Escuela / Academia">Escuela / Academia</option>
+                <option value="Particular / Familia">Particular / Familia</option>
+                <option value="Revendedor / Distribuidor">Revendedor / Distribuidor</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1" for="f-detalle">¿Qué necesitas? <span class="text-red-500">*</span></label>
+              <textarea id="f-detalle" required rows="4" placeholder="Ej: 10 resmas de papel bond, 50 plumas y 100 folders tamaño carta..."
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent transition resize-none"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition text-base">
+              <i class="fab fa-whatsapp text-2xl"></i>
+              Enviar cotización por WhatsApp
+            </button>
+            <p class="text-xs text-brand-gray text-center">Al hacer clic se abrirá WhatsApp con tu mensaje. No compartimos tu información.</p>
+          </form>
+        </div>
+
+        <!-- RIGHT: Contact info + Quick CTAs -->
+        <div class="space-y-6">
+
+          <!-- Quick WhatsApp CTA -->
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+            <h3 class="font-bold text-green-800 mb-1 flex items-center gap-2">
+              <i class="fab fa-whatsapp text-green-500 text-xl"></i> WhatsApp directo
+            </h3>
+            <p class="text-green-700 text-sm mb-4">¿Prefieres escribirnos directo? Te respondemos en minutos.</p>
+            <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank"
+               class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl transition">
+              <i class="fab fa-whatsapp mr-2"></i> Abrir WhatsApp
+            </a>
+          </div>
+
+          <!-- Phone -->
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold mb-1 flex items-center gap-2">
+              <i class="fas fa-phone text-brand-teal"></i> Teléfono
+            </h3>
+            <a href="tel:3334817411" class="text-brand-teal font-semibold text-lg hover:underline">333 481 7411</a>
+            <p class="text-brand-gray text-sm mt-1">Llámanos en horario de atención</p>
+          </div>
+
+          <!-- Email -->
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold mb-1 flex items-center gap-2">
+              <i class="fas fa-envelope text-brand-teal"></i> Correo electrónico
+            </h3>
+            <a href="mailto:contacto@lapapeleriademami.com" class="text-brand-teal font-semibold hover:underline break-all">
+              contacto@lapapeleriademami.com
+            </a>
+            <p class="text-brand-gray text-sm mt-1">Te respondemos en horario de atención</p>
+          </div>
+
+          <!-- Address -->
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold mb-2 flex items-center gap-2">
+              <i class="fas fa-map-marker-alt text-brand-teal"></i> Dirección de la tienda
+            </h3>
+            <p class="text-brand-gray text-sm leading-relaxed">
+              Tabaquillo 3154C<br>
+              Col. La Azucena<br>
+              El Salto, Jalisco, México<br>
+              C.P. 45680
+            </p>
+            <a href="https://maps.google.com/?q=Tabaquillo+3154C+La+Azucena+El+Salto+Jalisco+Mexico" target="_blank"
+               class="mt-3 inline-flex items-center gap-2 text-brand-teal text-sm font-semibold hover:underline">
+              <i class="fas fa-directions"></i> Cómo llegar
+            </a>
+          </div>
+
+          <!-- Hours (placeholder) -->
+          <div class="bg-brand-yellow rounded-2xl p-6">
+            <h3 class="font-bold text-brand-dark mb-3 flex items-center gap-2">
+              <i class="fas fa-clock"></i> Horario de atención
+            </h3>
+            <ul class="text-brand-dark text-sm space-y-1">
+              <li class="flex justify-between"><span>Lunes – Viernes</span><span class="font-semibold">9:00 – 20:00</span></li>
+              <li class="flex justify-between"><span>Sábado</span><span class="font-semibold">9:00 – 15:00</span></li>
+              <li class="flex justify-between"><span>Domingo</span><span class="font-semibold">9:00 – 15:00</span></li>
+            </ul>
+            <p class="text-xs text-yellow-900 mt-3 opacity-75">* Pedidos por WhatsApp fuera de horario serán atendidos el siguiente día hábil.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center section-title">Encuéntranos</h2>
+      <p class="text-brand-gray text-center mb-8 mt-6">Tabaquillo 3154C, Col. La Azucena, El Salto, Jalisco</p>
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <iframe
+          src="https://maps.google.com/maps?q=Tabaquillo+3154C,+La+Azucena,+El+Salto,+Jalisco,+Mexico&output=embed&z=15"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación La Papelería de Mami">
+        </iframe>
+      </div>
+      <div class="text-center mt-6">
+        <a href="https://maps.google.com/?q=Tabaquillo+3154C+La+Azucena+El+Salto+Jalisco+Mexico" target="_blank"
+           class="btn-teal">
+          <i class="fas fa-directions"></i> Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIT INFO -->
+  <section class="py-14 bg-gradient-to-r from-green-600 to-green-700 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-3">¿Tu empresa quiere crédito?</h2>
+      <p class="text-green-100 mb-6">Pregúntanos sobre nuestros planes de crédito a 15 y 30 días para empresas y negocios.</p>
+      <a href="https://wa.me/523334817411?text=Hola%2C%20me%20interesa%20conocer%20las%20condiciones%20de%20cr%C3%A9dito%20para%20mi%20empresa" target="_blank"
+         class="inline-flex items-center gap-3 bg-white text-green-700 font-bold px-8 py-4 rounded-full text-lg hover:bg-green-50 transition shadow-lg">
+        <i class="fab fa-whatsapp text-green-500 text-2xl"></i> Preguntar sobre crédito
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="img/logo2.png" alt="Logo" class="h-12 w-12 object-contain rounded-full">
+            <div>
+              <div class="text-white font-bold">La Papelería de Mami</div>
+              <div class="text-xs text-gray-400">Tu proveedor de confianza</div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400">Centro de soluciones de papelería y servicios para empresas y particulares en El Salto, Jalisco.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html"     class="hover:text-brand-yellow transition">Inicio</a></li>
+            <li><a href="servicios.html" class="hover:text-brand-yellow transition">Servicios</a></li>
+            <li><a href="nosotros.html"  class="hover:text-brand-yellow transition">Visión y Misión</a></li>
+            <li><a href="contacto.html"  class="hover:text-brand-yellow transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-map-marker-alt text-brand-yellow mt-1 shrink-0"></i>
+              <span>Tabaquillo 3154C, Col. La Azucena, El Salto, Jal. C.P. 45680</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp text-green-400"></i>
+              <a href="https://wa.me/523334817411" target="_blank" class="hover:text-brand-yellow transition">333 481 7411</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-phone text-brand-yellow"></i>
+              <a href="tel:3334817411" class="hover:text-brand-yellow transition">333 481 7411</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope text-brand-yellow"></i>
+              <a href="mailto:contacto@lapapeleriademami.com" class="hover:text-brand-yellow transition break-all">contacto@lapapeleriademami.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+        © 2025 La Papelería de Mami. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/523334817411?text=Hola%2C%20quiero%20cotizar%20un%20pedido" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline">¿En qué te ayudamos?</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
