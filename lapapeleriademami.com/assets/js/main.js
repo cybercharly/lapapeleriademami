@@ -41,13 +41,29 @@ if (cotizaForm) {
     const tipo    = document.getElementById('f-tipo').value;
     const detalle = document.getElementById('f-detalle').value.trim();
 
-    const text = `¡Hola! Me llamo *${nombre}*${empresa ? ` de *${empresa}*` : ''}.
+    const text = `¡Hola! Los encontré en su sitio web. Me llamo *${nombre}*${empresa ? ` de *${empresa}*` : ''}.
 
 *Tipo de cliente:* ${tipo}
 *Necesito:* ${detalle}
 
 Me gustaría solicitar una cotización. ¿Me pueden ayudar?`;
 
+    gtagConversion();
     window.open(`https://wa.me/523334817411?text=${encodeURIComponent(text)}`, '_blank');
   });
 }
+
+// --- Google Ads: disparar conversión en cualquier clic a WhatsApp ---
+function gtagConversion() {
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      send_to: 'AW-18011550786/KIdnCP_Kz4gcEMLoyYxD',
+      value: 1.0,
+      currency: 'MXN'
+    });
+  }
+}
+
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+  link.addEventListener('click', gtagConversion);
+});
